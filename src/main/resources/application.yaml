@@ -1,0 +1,28 @@
+spring:
+  devtools:
+    restart:
+      enabled: "true"
+  output:
+    ansi:
+      enabled: "always"
+
+trustgraphmanager:
+  issuers-contract-address: ''
+  entrypoints-contract-address: ''
+  contexts-contract-address: ''
+  infura-api-key: ''
+  private-key: ''
+  address: ''
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5p %C{1}:%L - %m%n"
+
+server:
+  address: "localhost"
+  port: "8080"
+  tomcat:
+    accept-count: "300"
+    threads:
+      max: "300"
+      min-spare: "300"
